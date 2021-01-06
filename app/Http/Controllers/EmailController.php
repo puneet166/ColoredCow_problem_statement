@@ -4,12 +4,20 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\sendingEmail;
+use Auth;
 
 class EmailController extends Controller
 {
     function index()
     {
+        if($user = Auth::user())
+        {
         return view('emailsend');
+        }
+        else
+        {
+            return view('auth/login');
+        }
     }
 
     function send(Request $request)
@@ -25,7 +33,7 @@ class EmailController extends Controller
             'message' => $request->message
         );
 
-        Mail::to('mail9999820200@gmail.com')->send(new sendingEmail($data));
+        Mail::to($request->email)->send(new sendingEmail($data));
         return back()->with('success', 'Email has been sent');
     }
 
