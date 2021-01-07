@@ -3,7 +3,7 @@
 
 ## Table Of Contents
 1. [About project](#desc)
-2. [How to use the project and prerequisite for run the project in local machine.](#desc1)
+2. [How to use the project and prerequisite for running the project in the local machine.](#desc1)
 3. [Check .env file](#desc2)
 4. [Check project's snaps](#desc3)
 
