@@ -27,3 +27,8 @@ Route::post('/queries/user',[App\Http\Controllers\Queries::class, 'queriess']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/email', [App\Http\Controllers\HomeController::class, 'Email'])     ;
+
+
+Route::get('/manageMailChimp', [App\Http\Controllers\MailChimpController::class, 'manageMailChimp']);
+Route::post('subscribe',['as'=>'subscribe','uses'=>'MailChimpController@subscribe']);
+Route::post('sendCompaign',['as'=>'sendCompaign','uses'=>'MailChimpController@sendCompaign']);

@@ -19,9 +19,13 @@ class sendingEmail extends Mailable
 
     public $emails;
 
+    public $subject;
+    
+
     public function __construct($emails)
     {
         $this->emails = $emails;
+        $this->subject = $emails['subject']   ;
     }
 
 /**
@@ -31,7 +35,7 @@ class sendingEmail extends Mailable
 */
     public function build()
     {
-        return $this->subject('Message from Visitor')
+        return $this->subject($this->subject)
                     ->view('email_template')
                     ->with('emails', $this->emails);
 }

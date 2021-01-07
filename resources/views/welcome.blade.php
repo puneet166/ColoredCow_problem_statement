@@ -21,6 +21,12 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 <!-- Links (sit on top) -->
 
 <!-- Content -->
+@if ($message = Session::get('success'))
+<div class="alert alert-success alert-block">
+<button type="button" class="close" data-dismiss="alert">×</button>
+<strong>{{ $message }}</strong>
+</div>
+@endif
 
   <div class="w3-panel">
     <h1><b>Email Service</b></h1>
@@ -81,6 +87,8 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     </div>
     <button type="submit" class="w3-button w3-block w3-black">Send</button>
   </form>
+
+</div>
 
 </div>
 
