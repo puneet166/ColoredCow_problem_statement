@@ -1,26 +1,28 @@
-## Table of content
+# Email Services
+
+## Table Of Content
 1. [About project](#desc)
 2. [How to use the project and prerequisite for run the project in local machine.](#desc1)
 3. [Check .env file](#desc2)
 4. [Check project's snaps](#desc3)
 
 <a name="desc"></a>
-# About Project..
+## About The Project.
 * This project for send Transaction email , Advertise Email , lauching product email , Bulk emails and more much.
 * In this project we are using Google gmail smtp. 
 * User can send email to particular person and group of people.
-* Before sending mails user have to login first.
-* For any query and doubt User can submit the query in form.
+* The user must first login before sending the mail.
+* The user can use the query form for any query and doubt.
 <a name="desc1"></a>
-## How to use the project and prerequisite for run the project in local machine.
+## How to use the project and prerequisite for running the project in the local machine.
 1. Download xampp.
-2. clone the repo ```git clone <l_repo>``` .
-3. go into the repo ```cd l_repo``` .
-4. run ``` composer install ``` to generate depedencies in vendor folder.
-5. generate the laravel project key ```php artisan key:generate``` .
-6. migrate and seed at the same time ```php artisan migrate:fresh --seed``` .
+2. Clone the repo ```git clone <l_repo>``` .
+3. Go into the repo ```cd l_repo``` .
+4. Run ``` composer install ``` to generate depedencies in vendor folder.
+5. Generate the laravel project key ```php artisan key:generate``` .
+6. Migrate and seed at the same time ```php artisan migrate:fresh --seed``` .
 7. Convert ``` .env.example to .env ``` .
-8. change the 'database name' & 'username' & 'password' 
+8. Change the 'database name' & 'username' & 'password' 
 ```
 DB_HOST=localhost
 DB_DATABASE=your data base name here
@@ -28,9 +30,9 @@ DB_USERNAME=root
 DB_PASSWORD=
 ``` 
 9. Link with storage ```php artisan storage:link``` .
-10. start the server ```php artisan serve``` .
+10. Start the server ```php artisan serve``` .
 <a name="desc2"></a>
-### Let me share my .env file
+## Let me share my .env file.
 ```
 APP_NAME=Laravel
 APP_ENV=local
@@ -83,10 +85,10 @@ MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 ```
 
-* After save the file run the command ```php artisan config:cache``` .
-* run the server again.
+* Run the command after saving the file ```php artisan config:cache``` .
+* Run the server again.
 <a name="desc3"></a>
-## [Click here to check some snipt of the project for more clarification](https://drive.google.com/file/d/1X_jfxp6_zfAzN-OvaEj_RIVx5l59rB8a/view?usp=sharing)
+## [Click here to check some snips of the project for more clarification](https://drive.google.com/file/d/1X_jfxp6_zfAzN-OvaEj_RIVx5l59rB8a/view?usp=sharing)
 
 
 
