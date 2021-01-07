@@ -1,10 +1,17 @@
+## Table of content
+[About project](#desc)
+[How to use the project and prerequisite for run the project in local machine.](#desc1)
+[Check .env file](#desc2)
+[Check project's snaps](#desc3)
+
+<a name="desc"></a>
 # About Project..
 * This project for send Transaction email , Advertise Email , lauching product email , Bulk emails and more much.
 * In this project we are using Google gmail smtp. 
 * User can send email to particular person and group of people.
 * Before sending mails user have to login first.
 * For any query and doubt User can submit the query in form.
-
+<a name="desc1"></a>
 ## How to use the project and prerequisite for run the project in local machine.
 1. Download xampp.
 2. clone the repo ```git clone <l_repo>``` .
@@ -22,6 +29,7 @@ DB_PASSWORD=
 ``` 
 9. Link with storage ```php artisan storage:link``` .
 10. start the server ```php artisan serve``` .
+<a name="desc2"></a>
 ### Let me share my .env file
 ```
 APP_NAME=Laravel
@@ -77,6 +85,7 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
 * After save the file run the command ```php artisan config:cache``` .
 * run the server again.
+<a name="desc3"></a>
 ## [Click here to check some snipt of the project for more clarification](https://drive.google.com/file/d/1X_jfxp6_zfAzN-OvaEj_RIVx5l59rB8a/view?usp=sharing)
 
 
