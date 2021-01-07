@@ -1,8 +1,8 @@
 ## Table of content
-[About project](#desc)
-[How to use the project and prerequisite for run the project in local machine.](#desc1)
-[Check .env file](#desc2)
-[Check project's snaps](#desc3)
+1. [About project](#desc)
+2. [How to use the project and prerequisite for run the project in local machine.](#desc1)
+3. [Check .env file](#desc2)
+4. [Check project's snaps](#desc3)
 
 <a name="desc"></a>
 # About Project..
