@@ -33,7 +33,7 @@ DB_PASSWORD=
 9. Link with storage ```php artisan storage:link``` .
 10. Start the server ```php artisan serve``` .
 <a name="desc2"></a>
-## Let me share my .env file.
+## Let me share my .env file here.
 ```
 APP_NAME=Laravel
 APP_ENV=local
