@@ -75,10 +75,9 @@ MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 ```
 
-### After save the file run the command ```php artisan config:cache``` .
-### run the server again.
-## Let me share some sniipt of the project for more clarification.
-
+* After save the file run the command ```php artisan config:cache``` .
+* run the server again.
+## [Click here to check some snipt of the project for more clarification](https://drive.google.com/file/d/1X_jfxp6_zfAzN-OvaEj_RIVx5l59rB8a/view?usp=sharing)
 
 
 
