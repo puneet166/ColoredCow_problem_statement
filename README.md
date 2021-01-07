@@ -9,7 +9,7 @@
 
 <a name="desc"></a>
 ## About The Project.
-* This project for send Transaction email , Advertise Email , lauching product email , Bulk emails and more much.
+* This project for send Transaction email , Advertise Email , lauching product email , Bulk emails and much more.
 * In this project we are using Google gmail smtp. 
 * User can send email to particular person and group of people.
 * The user must first login before sending the mail.
