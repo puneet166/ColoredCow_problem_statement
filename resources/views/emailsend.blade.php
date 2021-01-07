@@ -52,7 +52,7 @@ background-color:#ffff99;
 <input type="text" name="name" class="form-control" value="" />
 </div>
 <div class="form-group">
-<label>Enter multiple emails with space seperate</label>
+<label>Enter multiple emails with seperate By Space</label>
 <input type="text" name="email" class="form-control" value="" />
 </div>
 <div class="form-group">

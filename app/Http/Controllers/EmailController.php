@@ -36,12 +36,11 @@ class EmailController extends Controller
 
         );
         $emailss = explode(' ', $request->email);
-        //$emailss=['singhpuneei@gmail.com','puneetsingh10091998@gmail.com'];
-        //Mail::to($request->email)->send(new sendingEmail($data));
+        
         foreach ($emailss as $recipient) {
             Mail::to($recipient)->send(new sendingEmail($data));
         }
-        //Mail::mailer('mailgun')->to('singhpuneei@gmail.com')->send(new sendingEmail($data));
+       
         return back()->with('success', 'Email has been sent');
     }
 

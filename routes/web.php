@@ -17,9 +17,8 @@ use App\Http\Controllers\Queries;
 Route::get('/', function () {
     return view('welcome');
 });
-#Route::get('/contact', 'EmailController@index');
+
 Route::get('/contact', [App\Http\Controllers\EmailController::class, 'index'])->name('contact');
-#Route::post('/sendemail/send', 'EmailController@send');
 Route::post('/sendemail/send', [App\Http\Controllers\EmailController::class, 'send']);
 
 Auth::routes();
@@ -29,6 +28,3 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/email', [App\Http\Controllers\HomeController::class, 'Email'])     ;
 
 
-Route::get('/manageMailChimp', [App\Http\Controllers\MailChimpController::class, 'manageMailChimp']);
-Route::post('subscribe',['as'=>'subscribe','uses'=>'MailChimpController@subscribe']);
-Route::post('sendCompaign',['as'=>'sendCompaign','uses'=>'MailChimpController@sendCompaign']);
